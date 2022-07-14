@@ -1,0 +1,31 @@
+<script>
+   function lw()
+   {
+     x=document.getElementById("d2");
+     y=document.getElementById("d3");
+     x.innerHTML=y.value;
+
+
+   }
+
+   function vw()
+   {
+     
+      document.getElementById("d2").innerHTML = " ";
+      document.getElementById("d3").value = " ";
+
+   }
+   
+
+</script>
+<body>
+   <p id="d1">WELCOME TO LIVE CODING PAGE</p> </br>
+
+   <div id="d2">See your output</div>
+    Enter your code: <textarea id="d3" onkeydown="lw()"></textarea>  </br>
+
+   <button  onclick="vw()"> Clear </button>
+
+
+
+</body>
